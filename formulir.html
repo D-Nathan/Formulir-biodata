@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Icon Label -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FORMULIR BIODATA</title>
+
+  <!-- Background Cover -->
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* .video-container {
+      x position: relative;
+      height: 100%;
+      overflow: hidden;
+    } */
+
+    video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #ffffff;
+    }
+  </style>
+
+  <!-- isi -->
+</head>
+
+<body>
+  <div class="video-container">
+    <video autoplay loop muted playsinline>
+      <source src="backvideo.mp4" type="video/mp4" />
+      <!-- Jika browser tidak mendukung video, Anda dapat menambahkan tag fallback -->
+      <!-- <img src="fallback-image.jpg" alt="Fallback Image"> -->
+
+    </video>
+
+    <div class="content">
+      <h1>FORMULIR BIODATA</h1><br><br>
+
+      <pre><label  for="nama"> Nama          : </label><input type="text" id="nama" name="nama" /></pre>
+
+      <pre><label for="NIM"> NIM           : </label><input type="text" id="NIM" name="NIM" /></pre>
+
+      <pre><label for="Jurusan"> Jurusan       :</label> <input type="text" id="Jurusan" name="Jurusan" /></pre>
+
+      <pre><label for="Fakultas">  Fakultas      :</label> <select>
+        <option></option>
+        <option>Fakultas Ilmu Kommputer</option>
+        <option>Fakultas Ekonomi & Bisnis</option>
+        <option>Fakultas Teknik</option>
+        <option>Fakultas Ilmu Budaya</option>
+        <option>Fakultas Kesehatan</option>
+        <option>Fakultas Kedokteran</option></select></pre>
+
+      <pre><label for="Angkatan"> Angkatan      :</label> <input type="text" id="Angkatan" name="Angkatan" /></pre>
+
+      <pre><label for="Jenis Kelamin">Jenis Kelamin :</label> <input type="radio" name="Jenis Kelamin" id="Pria" /> <label for="Pria">Pria</label><input type="radio" name="Jenis Kelamin" id="Wanita" /><label for="Wanita">Wanita</label></pre>
+
+      <pre><label for="Email">  Email         : </label><input type="email" id="Email" name="Email" /></pre>
+      <br><br><br><br>
+
+      </pre>
+
+      <!-- Button -->
+      <button type="submit" value="Submit"><b>Submit</button></b>
+      <button type="reset" value="Reset"><b>Reset</button></b>
+      <button><a href="biodata.html">Biodata</a></button>
+
+      </video>
+    </div>
+  </div>
+  </form>
+</body>
+
+</html>
